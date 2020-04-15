@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  algo: 1
+  apps: 1
+  blog: 1
+  song_rec: 1
+  song_wrote: 1
+  journal: 1
+  letters: 1
+  calls: 1
+  front_p: 1
+  side_p: 1
+  rear_p: 1
+  curls: 1
+  burpee: 1
+  push_u: 1
+  chin_u: 1
+  lunges: 1
+  lat_raise: 1
+  front_raise: 1
+  ohp: 1
+  mood: 1
+  the_date: 2020-04-15
+  summary: MyString
+  color: MyString
+
+two:
+  algo: 1
+  apps: 1
+  blog: 1
+  song_rec: 1
+  song_wrote: 1
+  journal: 1
+  letters: 1
+  calls: 1
+  front_p: 1
+  side_p: 1
+  rear_p: 1
+  curls: 1
+  burpee: 1
+  push_u: 1
+  chin_u: 1
+  lunges: 1
+  lat_raise: 1
+  front_raise: 1
+  ohp: 1
+  mood: 1
+  the_date: 2020-04-15
+  summary: MyString
+  color: MyString

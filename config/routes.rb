@@ -4,6 +4,7 @@
           resources :users, only: [:create]
           post '/login', to: 'auth#create'
           get '/profile', to: 'users#profile'
+          resources :days
         end
       end
     end

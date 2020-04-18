@@ -1,11 +1,17 @@
 class Api::V1::DaysController < ApplicationController
 
 def create
-    day = Day.create(day_params)
-    if day.valid?
+    day = Day.create!(day_params)
+    # if day.valid?
         render json: day
-    end
+    # end
 end
+
+# def create
+#     comment = Comment.create(comment_params)
+#     render json: comment
+# end
+
 
 def index
     days = Day.all

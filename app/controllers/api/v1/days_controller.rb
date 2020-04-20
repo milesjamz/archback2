@@ -7,12 +7,6 @@ def create
     # end
 end
 
-# def create
-#     comment = Comment.create(comment_params)
-#     render json: comment
-# end
-
-
 def index
     days = Day.all
     render json: days
@@ -26,7 +20,7 @@ end
 private
 
 def day_params
-    params.require(:day).permit(:algo, :apps, :blog, :song_rec, :song_wrote, :journal, :letters, :calls, :front_p, :side_p, :rear_p, :curls, :burpee, :push_u, :chin_u, :lunges, :lat_raise, :front_raise , :ohp, :mood, :the_date, :summary, :color)
+    params.require(:day).permit(:algo, :apps, :blog, :song_rec, :song_wrote, :journal, :letters, :calls, :front_p, :side_p, :rear_p, :curls, :burpee, :push_u, :chin_u, :lunges, :lat_raise, :front_raise , :ohp, :mood, :the_date, :summary, :color, :user_id)
 end
 
 end

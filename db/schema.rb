@@ -10,10 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_20_160225) do
+ActiveRecord::Schema.define(version: 2020_11_23_231601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "allergens", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "days", force: :cascade do |t|
     t.integer "algo"
@@ -42,6 +46,34 @@ ActiveRecord::Schema.define(version: 2020_04_20_160225) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
+  end
+
+  create_table "exercises", force: :cascade do |t|
+    t.string "name"
+    t.integer "quantity"
+    t.boolean "minutes_reps"
+    t.integer "calories"
+  end
+
+  create_table "food_days", force: :cascade do |t|
+    t.date "the_date"
+    t.string "summary"
+    t.integer "user_id"
+  end
+
+  create_table "meals", force: :cascade do |t|
+    t.string "name"
+    t.text "summary"
+    t.integer "quantity"
+    t.integer "speed"
+    t.integer "calories"
+  end
+
+  create_table "symptoms", force: :cascade do |t|
+    t.string "name"
+    t.text "summary"
+    t.integer "severity"
+    t.integer "length"
   end
 
   create_table "users", force: :cascade do |t|

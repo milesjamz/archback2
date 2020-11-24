@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 File.open('allergies.txt').each do |line|
-    print line
-    # Allergen.create(:name => `#{line}`)
+    # print line
+    Allergen.create(:name => `#{line}`)
 end

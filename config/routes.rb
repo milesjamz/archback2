@@ -2,6 +2,7 @@
       namespace :api do
         namespace :v1 do
           resources :users
+          resources :allergens
           post '/login', to: 'auth#create'
           get '/profile', to: 'users#profile'
           resources :days

@@ -23,8 +23,5 @@ class Api::V1::AllergensController < ApplicationController
         def allergen_params
           params.require(:allergen).permit(:name)
         end
-      end
-
-
 
 end

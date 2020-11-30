@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_211747) do
   create_table "drinks", force: :cascade do |t|
     t.integer "quantity"
     t.integer "food_day_id"
-    t.string "type"
+    t.string "drink_type"
   end
 
   create_table "exercises", force: :cascade do |t|

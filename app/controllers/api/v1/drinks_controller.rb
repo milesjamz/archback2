@@ -1,4 +1,4 @@
-class Api::V1::MealsController < ApplicationController
+class Api::V1::DrinksController < ApplicationController
 
     def create
         drink = Drink.create!(drink_params)
@@ -20,7 +20,7 @@ class Api::V1::MealsController < ApplicationController
     private
     
     def drink_params
-        params.require(:drink).permit(:quantity, :food_day_id, :type)
+        params.require(:drink).permit(:quantity, :food_day_id, :drink_type)
     end
 
 end

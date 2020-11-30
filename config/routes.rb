@@ -6,6 +6,7 @@
           resources :food_days
           resources :meals
           resources :symptoms
+          resources :drinks
           post '/login', to: 'auth#create'
           get '/profile', to: 'users#profile'
           resources :days

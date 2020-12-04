@@ -20,7 +20,7 @@ class Api::V1::SymptomsController < ApplicationController
     private
     
     def symptom_params
-        params.require(:symptom).permit(:name, :summary, :severity, :length)
+        params.require(:symptom).permit(:name, :summary, :severity, :length, :food_day_id)
     end
 
 

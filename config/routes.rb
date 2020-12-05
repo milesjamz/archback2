@@ -7,6 +7,7 @@
           resources :meals
           resources :symptoms
           resources :drinks
+          resources :meal_allergens
           post '/login', to: 'auth#create'
           get '/profile', to: 'users#profile'
           resources :days

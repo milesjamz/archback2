@@ -1,5 +1,6 @@
 class Allergen < ApplicationRecord
 
-belongs_to :meal
+has_many :meal_allergens
+has_many :meals, through: :meal_allergens
     
 end

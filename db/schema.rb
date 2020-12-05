@@ -10,18 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_04_192045) do
+ActiveRecord::Schema.define(version: 2020_12_05_182250) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "allergens", force: :cascade do |t|
     t.string "name"
-  end
-
-  create_table "allergens_meals", id: false, force: :cascade do |t|
-    t.bigint "meal_id", null: false
-    t.bigint "allergen_id", null: false
   end
 
   create_table "days", force: :cascade do |t|
@@ -80,6 +75,11 @@ ActiveRecord::Schema.define(version: 2020_12_04_192045) do
   create_table "food_days_symptoms", id: false, force: :cascade do |t|
     t.bigint "food_day_id", null: false
     t.bigint "symptom_id", null: false
+  end
+
+  create_table "meal_allergens", force: :cascade do |t|
+    t.integer "meal_id"
+    t.integer "allergen_id"
   end
 
   create_table "meals", force: :cascade do |t|
